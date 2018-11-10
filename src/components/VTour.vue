@@ -122,6 +122,7 @@ export default {
     },
     stop () {
       this.customCallbacks.onStop()
+      this.$emit('stop');
       this.currentStep = -1
     },
 
